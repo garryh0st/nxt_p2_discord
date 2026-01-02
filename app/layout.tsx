@@ -20,7 +20,11 @@ export default function RootLayout({
     <ClerkProvider>
       <html suppressHydrationWarning lang="en">
         <body className={font.className}>
-          <ThemeProvider defaultTheme="dark" storageKey="theme"     attribute="class">
+          <ThemeProvider
+            defaultTheme="dark"
+            storageKey="theme"
+            attribute="class"
+          >
             {children}
           </ThemeProvider>
         </body>
